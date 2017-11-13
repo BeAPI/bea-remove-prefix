@@ -1,6 +1,6 @@
 # BEA - Remove prefix
 
-Allow to remove prefix when in ms and/or composer.
+Allow to remove prefix when in multisite and/or composer.
 
 It will remove the prefixes added by multisite installs and also handle the custom folder for WordPress when in Composer installation.
 
