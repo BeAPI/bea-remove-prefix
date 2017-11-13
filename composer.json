@@ -1,0 +1,13 @@
+{
+  "name": "bea/bea-remove-prefix",
+  "description": "Allow to remove prefix when in ms and/or composer.",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Be API",
+      "email": "technique@beapi.fr"
+    }
+  ],
+  "type" : "wordpress-muplugin"
+}
