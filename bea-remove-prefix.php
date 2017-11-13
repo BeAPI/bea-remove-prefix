@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: WPMS - Remove prefix(s)
-Version: 1.0
+Version: 1.0.0
 Plugin URI: http://www.beapi.fr
 Description: Remove prefix(s) for main website of WordPress Network Installation and composer folder path.
 Author: BeAPI
 Author URI: http://www.beapi.fr
 
-Copyright 2016 - BeAPI Team (technique@beapi.fr)
+Copyright 2017 - BeAPI Team (technique@beapi.fr)
 */
 
 /**
