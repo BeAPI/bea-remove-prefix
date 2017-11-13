@@ -22,7 +22,10 @@ Arrays are instancied in php 5.4+ : `[]`.
 
 ## Depency to php 7.0
 
-A constant is directly defined with an array as value, which is only available with php 7.0+ : `const BEA_CHECK_SLUG = [ 'wp', 'blog' ];`
+A constant is directly defined with an array as value, which is only available with php 7.0+ :
+
+`const BEA_CHECK_SLUG = [ 'wp', 'blog' ];`
+
 If you want to use it without php 7.0 depedency, you could instead implement an global var with an array.
 
 # Changelog ##
