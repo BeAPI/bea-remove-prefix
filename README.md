@@ -15,5 +15,5 @@ Now compatible with :
 # Changelog ##
 
 ## 1.0.0 - 13 Nov 2017
-* Add compatibility for single sites, multisites and multnetworks
+* Add compatibility for single sites, multisites and multinetworks
 * Init
