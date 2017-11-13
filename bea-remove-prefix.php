@@ -3,7 +3,7 @@
 Plugin Name: WPMS - Remove prefix(s)
 Version: 1.0
 Plugin URI: http://www.beapi.fr
-Description: Remove prefix(s) for main website of WordPress Network Installation.
+Description: Remove prefix(s) for main website of WordPress Network Installation and composer folder path.
 Author: BeAPI
 Author URI: http://www.beapi.fr
 
@@ -66,14 +66,20 @@ function bea_update_ms_first_site_options() {
 	 * @see : https://github.com/stuttter/wp-multi-network/blob/master/wp-multi-network/includes/functions.php#L149
 	 *
 	 * Multiple options depending on cases :
-	 * - multi network : working as now
-	 * - multi sites : you could just get the `is_main_site_for_network()` & `get_main_network_id()` methods for quicker implementation
 	 * - single site : just loop to update options
+	 * - multi sites : check if `is_main_network()` & `is_main_site()`
+	 * - multi network : use the `is_main_site_for_network()` & `get_main_network_id()` methods for quicker implementation
 	 *
 	 * @author Maxime CULEA
 	 */
-	if ( ! function_exists( 'is_main_site_for_network' ) || ! is_main_site_for_network( get_main_network_id() ) ) {
-		return;
+	if ( is_multisite() ) {
+	 	if ( function_exists( 'is_main_site_for_network' ) && ! is_main_site_for_network( get_main_network_id() ) ) {
+			// Mutli network
+			return;
+		} elseif ( ! is_main_network() || ! is_main_site() ) {
+			// Multisite
+			return;
+		}
 	}
 
 	// Loop on wanted options to be updated
