@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: WPMS - Remove prefix(s)
+Plugin Name: BEA - Remove prefix
 Version: 1.0.0
 Plugin URI: http://www.beapi.fr
-Description: Remove prefix(s) for main website of WordPress Network Installation and composer folder path.
-Author: BeAPI
+Description: Allow to remove prefix when in multisite and/or composer.
+Author: Be API
 Author URI: http://www.beapi.fr
 
 Copyright 2017 - BeAPI Team (technique@beapi.fr)
